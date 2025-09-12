@@ -1,7 +1,13 @@
+
+Set-Content -Path .\requirements.txt -Value "scapy"
+@"
 __pycache__/
 *.pyc
 venv/
+env/
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
+~$*
+"@ | Set-Content -Path .\.gitignore
